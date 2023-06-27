@@ -5,7 +5,7 @@
  *Return: 1
  *
  */
-int printcharacter(char str)
+int printchar(char str)
 {
 	_putchar(str);
 	return (1);
@@ -52,7 +52,7 @@ int _printf(const char *format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					printcharacter(format[i]);
+					printchar(format[i]);
 					break;
 				case 's':
 					printstring(format[i]);
